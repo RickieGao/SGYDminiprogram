@@ -1,2 +1,79 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class="userinfo card">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl" default-avatar="cloud://cloud1-7god2m1j5cf46940.636c-cloud1-7god2m1j5cf46940-1306242121/23-picture.png"></open-data>
+      </view>
+      <view id="myId">
+        <open-data type="userNickName" default-text="未登录"></open-data>
+      </view>
+      <view class="arrow">
+        <mp-icon type="field" icon="arrow" color="gray" size="{{15}}"></mp-icon>
+      </view>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 请登录 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 请登录</button>
+      <view wx:else> 未登录</view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+<view class="userPoint card">
+  <view class="pointInfo">
+    <text id="myPoint">我的阅读积分</text>
+    <text id="point">{{point}}</text>
+  </view>
+  <view class="pointControl">
+    <text>积分明细</text>
+    <view class="VdivLine"></view>
+    <text>获取积分</text>
+    <view class="VdivLine"></view>
+    <text>兑换福利</text>
+  </view>
+</view>
+
+<ul class="myMoment card">
+  <li class="items">
+    <ul>
+      <li>
+        <mp-icon type="field" icon="like" color="black" size="{{25}}"></mp-icon>
+        我的获赞
+      </li>
+      <li class="arrow">
+        <mp-icon type="field" icon="arrow" color="gray" size="{{15}}"></mp-icon>
+      </li>
+    </ul>
+  </li>
+  <li>
+  <view class="HdivLine"></view>
+  </li>
+  <li class="items">
+    <ul>
+      <li>
+        <mp-icon type="field" icon="pencil" color="black" size="{{25}}"></mp-icon>
+        我的发布
+      </li>
+      <li class="arrow">
+        <mp-icon type="field" icon="arrow" color="gray" size="{{15}}"></mp-icon>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <view class="HdivLine"></view>
+  </li>
+  <li class="items">
+    <ul>
+      <li>
+        <mp-icon type="field" icon="comment" color="black" size="{{25}}"></mp-icon>
+        我的回复
+      </li>
+      <li class="arrow">
+        <mp-icon type="field" icon="arrow" color="gray" size="{{15}}"></mp-icon>
+      </li>
+    </ul>
+  </li>
+</ul>

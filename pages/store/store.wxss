@@ -1,0 +1,97 @@
+/* pages/store/store.wxss */
+page {
+  background-color: #ffffff;
+}
+
+.swiper{
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 5rpx;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.tipText{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+
+.myPoint{
+  font-weight: bold;
+}
+
+.point{
+  font-size: large;
+  font-weight: bolder;
+  color: #00cccc;
+}
+
+.getMorePointBtn{
+  color: #cccccc;
+  font-size: small;
+  margin-left: 30%;
+}
+
+.HdivLine{
+  background: #dddddd;
+  width: 100%;
+  height: 3rpx;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.content-cell {
+	width: 350rpx;
+	height: 500rpx;
+	margin-top: 50rpx;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  /* box-shadow: 0 4rpx 8rpx 0 rgba(0, 0, 0, 0.2), 0 6rpx 20rpx 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.content-cell image {
+	width: 320rpx;
+	height: 350rpx;
+}
+
+.describe {
+  height: 100rpx;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 9pt;
+  margin-top: 20rpx;
+	padding-left: 10rpx;
+}
+
+.buy {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  padding-left: 10rpx;
+}
+
+.price {
+  font-size: small;
+  font-weight: bold;
+  color: #00cccc;
+  margin-right: auto;
+}
+
+.footer {
+	color: #576b95;
+	font-size: 6pt;
+	text-align: center;
+	margin-top: 30rpx;
+	margin-bottom: 16rpx;
+}

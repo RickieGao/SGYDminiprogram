@@ -1,8 +1,11 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon"
+  },
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "发现",
-  "backgroundColor": "#eeeeee",
-  "backgroundTextStyle": "light"
+  "backgroundColor": "#ededed",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true
 }

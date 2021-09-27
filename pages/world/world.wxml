@@ -1,2 +1,34 @@
 <!--pages/world/world.wxml-->
-<text>pages/world/world.wxml</text>
+<scroll-view scroll-y="true" bindscrolltolower="scrollToLower" class="timeline">
+  <view class="tweet-container" wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}}">
+    <view class="top-container">
+      <image class="card-avatar" src="cloud://cloud1-7god2m1j5cf46940.636c-cloud1-7god2m1j5cf46940-1306242121/me.jpg"></image>                
+      <view class="user-container">
+        <text class="card-name">小高同学</text>
+        <text class="card-time">2021年9月20日 23:10</text>
+      </view>
+    </view>
+    <view class="middle-container flex-column">
+      <text class="message-text">学习使我快乐</text>
+      <image class="message-image"
+        src="cloud://cloud1-7god2m1j5cf46940.636c-cloud1-7god2m1j5cf46940-1306242121/reading.jpg" 
+        mode="aspectFill"
+        catchtap="previewImage"
+      ></image>
+    </view>
+    <view class="bottom-container flex-row">
+      <view class="bottom-tool flex-row flex-rest-width">
+        <mp-icon icon="star" color="black" size="{{10}}"></mp-icon>
+        <text class="bottom-tool-text">收藏</text>
+      </view>
+      <view class="bottom-tool">
+        <mp-icon icon="comment" color="black" size="{{10}}"></mp-icon>
+        <text class="bottom-tool-text">评论</text>
+      </view>
+      <view class="bottom-tool">
+        <mp-icon icon="like" color="black" size="{{10}}"></mp-icon>
+        <text class="bottom-tool-text">点赞</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

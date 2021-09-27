@@ -2,26 +2,44 @@
   "pages":[
     "pages/index/index",
     "pages/world/world",
+    "pages/store/store",
     "pages/me/me"
   ],
+  "style": "v2",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "list":[{
-      "pagePath": "page/index/index",
-      "text": "首页"
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "utils/images/Home.png",
+      "selectedIconPath": "utils/images/HomeSLT.png"
     },{
-      "pagePath": "page/world/world",
-      "text": "发现"
+      "pagePath": "pages/world/world",
+      "text": "发现",
+      "iconPath": "utils/images/04-delt2.png",
+      "selectedIconPath": "utils/images/03-delt1.png"
+    },
+    {
+      "pagePath": "pages/store/store",
+      "text": "商城",
+      "iconPath": "utils/images/gift.png",
+      "selectedIconPath": "utils/images/gift-fill.png"
     },{
-      "pagePath": "page/me/me",
-      "text": "我"
+      "pagePath": "pages/me/me",
+      "text": "我",
+      "iconPath": "utils/images/59-My Center2.png",
+      "selectedIconPath": "utils/images/58-My Center2-2.png"
     }]
   },
+  "entryPagePath": "pages/index/index",
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
