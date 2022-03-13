@@ -2,7 +2,7 @@
 <scroll-view scroll-y="true" bindscrolltolower="scrollToLower" class="timeline">
   <view class="tweet-container" wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}}">
     <view class="top-container">
-      <image class="card-avatar" src="cloud://cloud1-7god2m1j5cf46940.636c-cloud1-7god2m1j5cf46940-1306242121/me.jpg"></image>                
+      <image class="card-avatar" src="../../utils/images/me.jpg"></image>                
       <view class="user-container">
         <text class="card-name">小高同学</text>
         <text class="card-time">2021年9月20日 23:10</text>
@@ -11,7 +11,7 @@
     <view class="middle-container flex-column">
       <text class="message-text">学习使我快乐</text>
       <image class="message-image"
-        src="cloud://cloud1-7god2m1j5cf46940.636c-cloud1-7god2m1j5cf46940-1306242121/reading.jpg" 
+        src="../../utils/images/book.jpg" 
         mode="aspectFill"
         catchtap="previewImage"
       ></image>

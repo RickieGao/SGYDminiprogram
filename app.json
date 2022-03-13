@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/world/world",
     "pages/store/store",
     "pages/me/me"
@@ -16,12 +15,8 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "list":[{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "utils/images/Home.png",
-      "selectedIconPath": "utils/images/HomeSLT.png"
-    },{
+    "list":[
+      {
       "pagePath": "pages/world/world",
       "text": "发现",
       "iconPath": "utils/images/04-delt2.png",
@@ -39,12 +34,11 @@
       "selectedIconPath": "utils/images/58-My Center2-2.png"
     }]
   },
-  "entryPagePath": "pages/index/index",
+  "entryPagePath": "pages/world/world",
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
   },
   "debug": true,
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

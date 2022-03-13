@@ -24,7 +24,7 @@
 <view class="content">
 		<block wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}}">
 			<view class="content-cell">
-				<image src="cloud://cloud1-7god2m1j5cf46940.636c-cloud1-7god2m1j5cf46940-1306242121/rice.jpg" binderror="imageError" mode="aspectFit"/>
+				<image src="../../utils/images/rice.jpg" binderror="imageError" mode="aspectFit"/>
 				<view class="describe">东北盘锦蟹田大米20斤10kg蟹稻共生2020年新米生态珍珠农家寿司米</view>
 				<view class="buy">
           <text class="price">100积分</text>

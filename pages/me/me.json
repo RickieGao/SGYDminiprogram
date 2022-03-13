@@ -2,6 +2,5 @@
   "usingComponents": {
     "mp-icon": "weui-miniprogram/icon/icon"
   },
-  "navigationBarTitleText": "我",
-  "enablePullDownRefresh": false
+  "enablePullDownRefresh": true
 }
